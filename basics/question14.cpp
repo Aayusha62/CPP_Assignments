@@ -8,10 +8,10 @@ int productOfDigits(int num) {
     while (num > 0) {
         int digit = num % 10; 
         product *= digit; 
-        num /= 10; 
+        num /= 10;
     }
 
-    return 0;
+    return product;
 }
 
 int main() {

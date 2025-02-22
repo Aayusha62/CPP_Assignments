@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 void onesComplement(string binary) {
@@ -7,7 +6,6 @@ void onesComplement(string binary) {
     cout << "After one's complement the number = ";
     
     for (char bit : binary) {
-        // Flip 1 to 0 and 0 to 1
         cout << (bit == '0' ? '1' : '0');
     }
 
@@ -24,6 +22,5 @@ int main() {
     } else {
         onesComplement(binary);
     }
-
     return 0;
 }

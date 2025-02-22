@@ -3,13 +3,13 @@
 using namespace std;
 
 int digitalRoot(int num) {
-    while (num >= 10) {  // Continue until only one digit remains
+    while (num >= 10) {  
         int sum = 0;
         while (num > 0) {
             sum += num % 10;  
-            num /= 10;        // Remove last digit
+            num /= 10;        
         }
-        num = sum;  // Assigning sum as new number
+        num = sum;
     }
     return num;
 }

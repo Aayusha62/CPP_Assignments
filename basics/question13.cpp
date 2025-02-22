@@ -1,35 +1,26 @@
 #include <iostream>
-
 using namespace std;
 
 bool isPrime(int num) {
-    if (num < 2) return false; 
+    if (num < 2) return false;
     for (int i = 2; i * i <= num; i++) {
         if (num % i == 0) return false;
     }
-    return true; 
+    return true;
 }
 
 int countPrimes(int n) {
     int count = 0;
     for (int i = 2; i < n; i++) {
-        if (isPrime(i)) {
-            count++; 
-        }
+        if (isPrime(i)) count++;
     }
-    return 0;
+    return count;
 }
 
 int main() {
     int n;
-    cout << "Enter a positive number: ";
+    cout << "Enter any number: ";
     cin >> n;
-
-    if (n <= 0) {
-        cout << "Please enter a positive number!" << endl;
-    } else {
-        cout << "Number of prime numbers less than " << n << " is " << countPrimes(n) << endl;
-    }
-
+    cout << "to count prime numbers less than " << n << " is " << countPrimes(n) << endl;
     return 0;
 }

@@ -18,7 +18,7 @@ int main() {
     cin >> num;
 
     if (num <= 0) {
-        cout << "Please enter a positive number!" << endl;
+        cout << "enter a positive number." << endl;
     } else {
         printFactors(num);
     }

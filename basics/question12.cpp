@@ -1,10 +1,8 @@
 #include <iostream>
 
 using namespace std;
-
-// Function to compute the integer square root using binary search
 int integerSquareRoot(int n) {
-    if (n < 0) return -1; // Invalid input check
+    if (n < 0) return -1; 
 
     int left = 0, right = n, ans = 0;
 
@@ -13,16 +11,16 @@ int integerSquareRoot(int n) {
         long long square = mid * mid;
 
         if (square == n) {
-            return mid; // Perfect square
+            return 0; // Perfect square
         } else if (square < n) {
-            ans = mid; // Store the last valid result
+            ans = mid; 
             left = mid + 1;
         } else {
             right = mid - 1;
         }
     }
     
-    return 0; 
+    return ans; 
 }
 
 int main() {
@@ -31,7 +29,7 @@ int main() {
     cin >> n;
 
     if (n < 0) {
-        cout << "Square root is not defined for negative numbers!" << endl;
+        cout << "Square root is not defined !" << endl;
     } else {
         cout << "Square root of " << n << " = " << integerSquareRoot(n) << endl;
     }

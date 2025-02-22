@@ -1,19 +1,15 @@
-
 #include <iostream>
-#include <string>
+using namespace std;
 
 int main() {
-    std::string firstName, lastName;
-
-    // Taking user input
-    std::cout << "Input First Name: ";
-    std::cin >> firstName;
+    string firstName, lastName;
     
-    std::cout << "Input Last Name: ";
-    std::cin >> lastName;
-
-    // Printing the name in reverse order
-    std::cout << "Name in reverse is: " << lastName << " " << firstName << std::endl;
-
+    cout << "Input First Name: ";
+    cin >> firstName;
+    cout << "Input Last Name: ";
+    cin >> lastName;
+    
+    cout << "Name in reverse is: " << lastName << " " << firstName << endl;
+    
     return 0;
 }
